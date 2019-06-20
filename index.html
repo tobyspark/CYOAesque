@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Choose-your-own-adventure-esque</title>
+
+    <style>
+        @font-face{
+            font-family: "Aleo Bold";
+            src: url("assets/aleo.bold.otf");
+        }
+        @font-face{
+            font-family: "Aleo Regular";
+            src: url("assets/aleo.regular.otf");
+        }
+        @font-face{
+            font-family: "Aleo Light Italic";
+            src: url("assets/aleo.lightitalic.otf");
+        }
+        
+        * {padding: 0; margin: 0}
+        
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    
+    <!-- Ideally, PixiJS and ES6-Tween should be imported as native ES6 modules, within the app code -->
+    <!-- However, this requires the localhost server to resolve index.js, which neither Brackets, Node, or Python servers do -->
+    <!-- RUNME could be rewritten as a Python script and SimpleHTTPRequestHandler subclassed to do this, but expediency strikes... -->
+    <script src="lib/pixi.js"></script>
+    <script src="lib/pixi-filters.js"></script>
+    <script src="lib/Tween.js"></script>
+</head>
+
+<body>
+    <!-- ensure font pre-load -->
+    <span style="font-family: 'Aleo Bold'">A choose-your-own-adventure-esque demo</span><br>
+    <span style="font-family: 'Aleo Regular'">Toby Harris &middot; http://sparklive.net</span>
+    <span style="font-family: 'Aleo Light Italic'">&nbsp;</span>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
